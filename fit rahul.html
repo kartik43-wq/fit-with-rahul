@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIT WITH RAHUL | Official Website</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ scroll-behavior:smooth;
+}
+body{
+ background:#090909;
+ color:white;
+ font-family:Arial,sans-serif;
+}
+header{
+ background:#080808;
+ padding:20px 8%;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ position:sticky;
+ top:0;
+ z-index:10;
+ border-bottom:1px solid #292929;
+}
+.logo{
+ font-size:23px;
+ font-weight:bold;
+ color:#ff3030;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin-left:18px;
+ font-size:13px;
+}
+nav a:hover{color:#ff3030}
+.hero{
+ min-height:580px;
+ padding:65px 9%;
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:35px;
+ background:linear-gradient(110deg,#080808,#350c0c);
+}
+.hero-content{
+ max-width:550px;
+ animation:appear 1s ease;
+}
+.hero h1{
+ font-size:clamp(43px,7vw,75px);
+ line-height:1.1;
+}
+.hero h1 span{color:#ff3030}
+.hero p{
+ color:#ccc;
+ line-height:1.8;
+ margin:23px 0;
+}
+.btn{
+ display:inline-block;
+ background:#ff3030;
+ color:white;
+ padding:14px 22px;
+ text-decoration:none;
+ border-radius:5px;
+ font-weight:bold;
+ margin:5px;
+ transition:.3s;
+}
+.btn:hover{
+ background:#d00000;
+ transform:translateY(-4px);
+}
+.photo-area{
+ width:320px;
+ min-width:280px;
+ height:420px;
+ overflow:hidden;
+ border:2px solid #ff3030;
+ border-radius:14px;
+ background:#181818;
+}
+.photo-area iframe{
+ width:100%;
+ height:100%;
+ border:0;
+}
+section{
+ padding:75px 9%;
+ text-align:center;
+}
+h2{
+ font-size:35px;
+ margin-bottom:25px;
+}
+h2 span{color:#ff3030}
+.about p{
+ max-width:720px;
+ margin:auto;
+ color:#ccc;
+ line-height:1.9;
+}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:22px;
+ margin-top:35px;
+}
+.card{
+ background:#191919;
+ padding:30px 20px;
+ border-radius:10px;
+ border-bottom:3px solid #ff3030;
+ transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card h3{
+ color:#ff4545;
+ margin-bottom:14px;
+}
+.card p{
+ color:#bbb;
+ line-height:1.7;
+}
+.videos{background:#121212}
+.video-box{
+ background:#1c1c1c;
+ padding:35px 20px;
+ border-radius:10px;
+ margin-top:30px;
+}
+.social{background:#181818}
+footer{
+ background:#050505;
+ text-align:center;
+ padding:25px;
+ color:#aaa;
+}
+footer span{color:#ff3030}
+@keyframes appear{
+ from{opacity:0;transform:translateY(25px)}
+ to{opacity:1;transform:translateY(0)}
+}
+@media(max-width:750px){
+ header{flex-direction:column;gap:17px}
+ nav a{margin:0 6px;font-size:11px}
+ .hero{
+  flex-direction:column;
+  text-align:center;
+  padding:55px 7%;
+ }
+ .photo-area{
+  width:100%;
+  max-width:320px;
+  margin:auto;
+ }
+ section{padding:55px 7%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+ <div class="logo">FIT WITH RAHUL</div>
+ <nav>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#fitness">FITNESS</a>
+  <a href="#videos">VIDEOS</a>
+  <a href="#contact">CONTACT</a>
+ </nav>
+</header>
+
+<!-- HOME BANNER -->
+<section class="hero" id="home">
+
+ <div class="hero-content">
+  <h1>BUILD YOUR<br>
+  <span>STRENGTH.</span></h1>
+
+  <p>
+   Welcome to Fit With Rahul!
+   Explore gym workouts, fitness videos,
+   motivation and healthy lifestyle content.
+   Stay focused and keep improving.
+  </p>
+
+  <a class="btn"
+  href="https://www.youtube.com/@fit.rahul.04?sub_confirmation=1"
+  target="_blank">SUBSCRIBE NOW</a>
+
+  <a class="btn"
+  href="https://www.instagram.com/fit.rahul.04/"
+  target="_blank">FOLLOW INSTAGRAM</a>
+ </div>
+
+ <!-- RAHUL INSTAGRAM PHOTO -->
+ <div class="photo-area">
+  <iframe
+   src="https://www.instagram.com/p/DdN88l4IGpI/embed"
+   allowtransparency="true"
+   scrolling="no">
+  </iframe>
+ </div>
+
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+ <h2>ABOUT <span>RAHUL</span></h2>
+ <p>
+  Welcome to my official fitness website!
+  Here you can explore my fitness journey,
+  gym activities, workout videos and motivation.
+  Follow my journey and stay connected.
+ </p>
+</section>
+
+<!-- FITNESS -->
+<section id="fitness">
+ <h2>MY <span>FITNESS</span></h2>
+
+ <div class="cards">
+  <div class="card">
+   <h3>GYM WORKOUT</h3>
+   <p>Explore gym activities and workout content.</p>
+  </div>
+
+  <div class="card">
+   <h3>FITNESS TIPS</h3>
+   <p>Discover exercise knowledge and healthy habits.</p>
+  </div>
+
+  <div class="card">
+   <h3>MOTIVATION</h3>
+   <p>Stay positive and consistent in your journey.</p>
+  </div>
+ </div>
+</section>
+
+<!-- YOUTUBE VIDEOS -->
+<section class="videos" id="videos">
+ <h2>MY <span>YOUTUBE CHANNEL</span></h2>
+
+ <div class="video-box">
+  <p>Watch my latest fitness videos on YouTube!</p>
+  <br>
+
+  <a class="btn"
+  href="https://www.youtube.com/@fit.rahul.04/videos"
+  target="_blank">WATCH VIDEOS</a>
+ </div>
+</section>
+
+<!-- SOCIAL -->
+<section class="social" id="contact">
+ <h2>LET'S <span>CONNECT</span></h2>
+ <p>Follow Rahul on social media.</p>
+ <br>
+
+ <a class="btn"
+ href="https://www.youtube.com/@fit.rahul.04"
+ target="_blank">YOUTUBE</a>
+
+ <a class="btn"
+ href="https://www.instagram.com/fit.rahul.04/"
+ target="_blank">INSTAGRAM</a>
+</section>
+
+<footer>
+ <p>© 2026 <span>FIT WITH RAHUL</span></p>
+ <p>Stay Strong. Stay Consistent.</p>
+</footer>
+
+</body>
+</html>
